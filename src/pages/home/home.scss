@@ -1,0 +1,29 @@
+page-home {
+
+    img.logo{
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    div.botones {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+
+    ion-input {
+        border: 2px solid #BB8FCE;
+        color: #9B59B6;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    button.ingresar {
+        background: #9B59B6;
+        margin-bottom: 10px;
+    }
+
+    a.cuenta {
+        color: #BB8FCE;
+    }
+}
