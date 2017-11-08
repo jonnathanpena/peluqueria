@@ -5,6 +5,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { ProductoClientePage } from '../pages/producto-cliente/producto-cliente';
+import { BilleteraClientePage } from '../pages/billetera-cliente/billetera-cliente';
+import { CitaClientePage } from '../pages/cita-cliente/cita-cliente';
+import { DashboardClientePage } from '../pages/dashboard-cliente/dashboard-cliente';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -14,15 +19,17 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{icono: string, title: string, component: any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { icono: "home", title: 'Home', component: DashboardClientePage },
+      { icono: "calendar", title: 'Nueva Cita', component: ProductoClientePage },
+      { icono: "clock", title: 'Consultar Cita', component: CitaClientePage },
+      { icono: "cash", title: 'Billetera', component: BilleteraClientePage },
     ];
 
   }

@@ -8,6 +8,10 @@ import { ListPage } from '../pages/list/list';
 import { DashboardClientePage } from '../pages/dashboard-cliente/dashboard-cliente';
 import { CalendarioClientePage } from '../pages/calendario-cliente/calendario-cliente';
 import { ProductoClientePage } from '../pages/producto-cliente/producto-cliente';
+import { BilleteraClientePage } from '../pages/billetera-cliente/billetera-cliente';
+import { CitaClientePage } from '../pages/cita-cliente/cita-cliente';
+import { DetallecitaClientePage } from '../pages/detallecita-cliente/detallecita-cliente';
+import { ResumenClientePage } from '../pages/resumen-cliente/resumen-cliente';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +23,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     DashboardClientePage,
     CalendarioClientePage,
-    ProductoClientePage
+    ProductoClientePage,
+    BilleteraClientePage,
+    CitaClientePage,
+    DetallecitaClientePage,
+    ResumenClientePage 
   ],
   imports: [
     BrowserModule,
@@ -32,7 +40,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     DashboardClientePage,
     CalendarioClientePage,
-    ProductoClientePage
+    ProductoClientePage,
+    BilleteraClientePage,
+    CitaClientePage,
+    DetallecitaClientePage,
+    ResumenClientePage
   ],
   providers: [
     StatusBar,
